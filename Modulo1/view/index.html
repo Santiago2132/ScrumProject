@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    body {
+    background: linear-gradient(blue, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.logo {
+    width: 40%;
+    /* Aquí puedes agregar los estilos para tu logo */
+}
+
+.login-form {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    width: 100%;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Aquí puedes importar tu logo -->
+        </div>
+        <div class="login-form">
+            <h2>Welcome!</h2>
+            <p><i>from students to engineers</i></p>
+            <form>
+                <input type="text" id="username" placeholder="User Name">
+                <input type="password" id="password" placeholder="Password">
+                <button type="button" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
