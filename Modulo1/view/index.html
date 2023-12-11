@@ -1,63 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<style>
-    body {
-    background: linear-gradient(blue, black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.logo {
-    width: 40%;
-    /* Aquí puedes agregar los estilos para tu logo */
-}
-
-.login-form {
-    text-align: center;
-    width: 300px;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 50%;
-}
-
-.login-form input {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.login-form button {
-    width: 100%;
-}
-
-</style>
 <body>
-    <div class="container">
-        <div class="logo">
-            <!-- Aquí puedes importar tu logo -->
+    
+    <div id="contenedor">
+            <!-- Contenido de la parte izquierda -->
+        <div id="izquierda">
+            <h2 id="titulogrande">
+                Welcome!
+            </h2>
+            <p id="eslogan">&lt;from sudents to engineers&gt;</p>
+            
         </div>
-        <div class="login-form">
-            <h2>Welcome!</h2>
-            <p><i>from students to engineers</i></p>
-            <form>
-                <input type="text" id="username" placeholder="User Name">
-                <input type="password" id="password" placeholder="Password">
-                <button type="button" id="submit">Submit</button>
-            </form>
+            <!-- Contenido de la parte derecha -->
+        <div id="derecha">            
+                <h2 id="signin">Sign in</h2>
+                <div>
+                    <label id="textusername">User Name</label><br>
+                    <input type="text" id="nameuser">
+                </div>
+                <div>
+                    <label id="textpassword">Password</label><br>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <input type="submit" id="botton" value="Submit">
+                </div>
+                <div class="figure-behind">
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="652px" height="652px" viewBox="0 0 902.179 893.428" fill="none" style="transform: rotate(0.227deg); flex-shrink: 0;">
+                        <path d="M877.945 449.191C877.022 681.866 685.737 870.145 450.185 869.211C214.634 868.276 24.849 678.485 25.7722 445.809C26.6953 213.134 217.98 24.855 453.532 25.7895C689.083 26.7241 878.868 216.515 877.945 449.191Z" fill="rgba(223, 255, 232, 0.10)" />
+                    
+                        <!-- Primer path con trazo negro y ancho de 50px -->
+                        <path d="M877.945 449.191C877.022 681.866 685.737 870.145 450.185 869.211C214.634 868.276 24.849 678.485 25.7722 445.809C26.6953 213.134 217.98 24.855 453.532 25.7895C689.083 26.7241 878.868 216.515 877.945 449.191Z" stroke="#000" stroke-width="50" />
+                    
+                        <!-- Segundo path con trazo y relleno negro y ancho de 50px -->
+                        <path d="M877.945 449.191C877.022 681.866 685.737 870.145 450.185 869.211C214.634 868.276 24.849 678.485 25.7722 445.809C26.6953 213.134 217.98 24.855 453.532 25.7895C689.083 26.7241 878.868 216.515 877.945 449.191Z" stroke="url(#paint0_linear_20_28)" stroke-opacity="0.8" stroke-width="50" />
+                    
+                        <!-- Definición del gradiente lineal -->
+                        <defs>
+                            <linearGradient id="paint0_linear_20_28" x1="453.631" y1="0.789722" x2="450.086" y2="894.21" gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0999997" stop-color="#78FFB6" />
+                                <stop offset="0.141666" stop-color="#009B60" stop-opacity="0.960763" />
+                                <stop offset="0.245833" stop-color="#008287" stop-opacity="0.86267" />
+                                <stop offset="0.34848" stop-color="#4575F2" stop-opacity="0.645833" />
+                                <stop offset="0.52766" stop-color="#182F6A" stop-opacity="0.395833" />
+                                <stop offset="0.683333" stop-color="#3856A4" stop-opacity="0.223958" />
+                                <stop offset="0.834375" stop-color="#7D97DA" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>                    
+                </div>
         </div>
     </div>
-    <script src="main.js"></script>
 </body>
 </html>

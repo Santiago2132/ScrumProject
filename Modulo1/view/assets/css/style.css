@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MuseoModerno';
+}    
+
+h2 {
+    color: #FFFFFF;        
+}
+
+label{
+    color:#CDCDCD;
+}
+
+p{
+    color: #8BF8FF;
+}
+
+button{
+    color: #ffffff;
+    background-color: #11212D;
+}
+
+#titulogrande {
+    color: #FFFFFF;
+    position: absolute;
+    top: 150px; /* Ajusta este valor según sea necesario para mover el título más abajo */
+    transform: translateY(100px);
+    transform: translateX(10%);
+    flex-shrink: 0;
+    font-family: 'MuseoModerno';
+    font-size: 140px;
+    font-style: blonde;
+    font-weight: 100;
+    line-height: normal;
+}
+
+
+
+#eslogan {
+    color: #8BF8FF;
+    position: absolute; /* Cambiar a posición absoluta para ajustar la posición */
+    top: 390px; /* Colocar el texto en la mitad vertical del contenedor izquierdo */
+    transform: translateY(-20%); /* Centrar verticalmente el texto */
+    transform: translateX(5%);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#contenedor {
+    display: flex; /* Utilizamos flexbox para crear un contenedor flexible */
+    height: 100vh; /* Altura del 100% de la ventana gráfica */
+}
+
+#izquierda {
+flex: 1; /* La parte izquierda ocupará el 50% del contenedor flexible */
+background-color: #06141B; /* Color de fondo de la parte izquierda */
+padding: 20px; /* Añadimos un poco de espacio alrededor del contenido */
+position: relative; /* Cambiar a posición relativa para ubicar elementos hijos */
+}
+
+#derecha {
+    flex: 1;
+    background-color: #06141B;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    margin-bottom: 15px; /* Ajusta el espacio vertical entre cada div dentro de la parte derecha */
+}
+
+/* Estilo del círculo */
+.circle {        
+    width: 610px;
+    height: 610px;
+    background-color: rgba(223, 255, 232, 0.397); /* Color de fondo del círculo con opacidad */
+    border: 37px solid; /* Grosor de borde de 5 píxeles con color azul (#3366FF) */
+    border-color: linear-gradient(to right, red , yellow);
+    border-radius: 80%; /* Hace que el borde sea redondeado (círculo) */
+    position: absolute; /* Posición absoluta para ubicar el círculo */
+    top: 40px; /* Ajustar la posición superior según sea necesario */
+    left: 50%; /* Colocar el círculo en la mitad horizontal de la pantalla */
+    transform: translateX(-50%); /* Centrar horizontalmente el círculo */
+    z-index: -1; /* Ajustar el índice z para ubicar detrás o delante del texto */
+}
+
+input[type="text"], input[type="password"] {
+border-radius: 15px; /* Esto redondeará las esquinas de las casillas de entrada */
+background-color: #CDCDCD; /* Esto cambiará el color de fondo de las casillas de entrada */    
+padding: 5px; /* Esto añadirá un poco de espacio alrededor del texto dentro de las casillas de entrada */
+}
+
+#signin{
+    color: #FFFFFF;
+    top: 200px;/* Colocar el texto en la mitad vertical del contenedor izquierdo */
+    transform: translateX(0px);
+    font-size: 60px;
+}
+
+#botton{
+    color: #ffffff;
+    background-color: #11212D;
+    margin-bottom: 15px; /* Ajusta el espacio vertical entre cada div dentro de la parte derecha */
+}
+#textusername {
+    font-weight: bold; /* Engrosa el texto */
+    color: #CDCDCD;
+    top: 180px; /* Ajusta la posición vertical del texto User Name */
+    font-size: 20px;
+}
+
+#textpassword {
+    font-weight: bold; /* Engrosa el texto */
+    color: #CDCDCD;
+    top: 150px; /* Ajusta la posición vertical del texto Password */
+    font-size: 20px;
+}
+
+#nameuser,#password {
+font-size: 20px; /* Ajusta el tamaño de fuente */
+padding: 10px; /* Ajusta el padding */
+margin-bottom: 15px; /* Ajusta el espacio vertical entre los inputs */
+border-radius: 40px;
+}
+
+
+#botton {
+color: #ffffff;
+font-size: 30px;
+font-weight: bold; /* Engrosa el texto */
+background-color: #11212D;
+margin-bottom: 0;
+border-radius: 40px;
+padding: 15px 100px;
+background-image: linear-gradient(to bottom, #11212D, #081319);
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+#botton:hover {
+background-image: linear-gradient(to bottom, #081319, #11212D);
+}
+/* Clase para posicionar la figura detrás de todos los divs e inputs */
+.figure-behind {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1; /* Ajusta este valor según sea necesario, debe ser menor que el z-index de #derecha */
+pointer-events: none; /* Permite que los eventos pasen a través del elemento SVG */
+/* Ajusta otras propiedades de estilo según tus necesidades */
+}
+#circulologo{
+width: 530px;
+height: 391px;
+flex-shrink: 0;
+border-radius: 530px;
+background: #CCD0CF;
+}
